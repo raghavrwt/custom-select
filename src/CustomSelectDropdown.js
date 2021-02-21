@@ -75,13 +75,15 @@ const CustomSelectDropdown = ({
     }
 
     const generateDivElements = (data) => {
-        return (
-            <div className='checkboxGroup'>
-                {data.map((item, index) => {
-                    return <div key={index} className='ant-checkbox-group-item' onClick={() => singleClick(item)} style={{ cursor: 'pointer'}}>{item}</div>
-                })}
-            </div>
-        )
+        if(data) {
+            return (
+                <div className='checkboxGroup'>
+                    {data.map((item, index) => {
+                        return <div key={index} className='ant-checkbox-group-item' onClick={() => singleClick(item)} style={{ cursor: 'pointer'}}>{item}</div>
+                    })}
+                </div>
+            )
+        }
     }
 
     return (
