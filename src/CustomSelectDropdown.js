@@ -28,7 +28,7 @@ const CustomSelectDropdown = ({
     }
 
     useEffect(() => {
-        setCheckboxOptions(data['Colours']);
+        setCheckboxOptions(data[defaultValue]);
     }, [data])
 
     const onHandleChange = (value) => {
@@ -93,7 +93,7 @@ const CustomSelectDropdown = ({
                     <label>Default</label>
                 </div>
                 <div>
-                    <Select defaultValue="Colours" style={{ width: 200 }} onChange={onHandleChange}>
+                    <Select defaultValue={defaultValue} style={{ width: 200 }} onChange={onHandleChange}>
                         {generateOptionField(defaultOptions)}
                     </Select>
                 </div>
