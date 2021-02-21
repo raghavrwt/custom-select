@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+.custom-select-container {
+  background-color: #F8F8F8;
+  margin: 20px auto;
+  width: 50%;
+  height: auto;
+  padding: 30px 30px 30px 60px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.checkbox-container {
+  background-color: white;
+  width: 200px;
+  margin-top: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-select-selection--single {
+  height: 40px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.ant-select-selection__rendered {
+  line-height: 37px !important;
+}
+
+.ant-checkbox-group-item {
+  border-bottom: 1.5px solid #eeeeee;
+  display: flex !important;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 0px !important;
+  padding-left: 10px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.checkboxGroup {
+  overflow-y: scroll;
+  height: 160px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkboxGroup::-webkit-scrollbar {
+  width: 5px;
+}
+
+.checkboxGroup::-webkit-scrollbar-track { 
+  background: white;   
+  height: 100%; 
+}
+
+.checkboxGroup::-webkit-scrollbar-thumb {
+  background-color: #D6D6D6;
+  border-radius: 20px;
 }
